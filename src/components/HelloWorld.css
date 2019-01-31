@@ -1,6 +1,7 @@
+
 h3 {
     margin: 40px 0 0;
-  }
+}
   ul {
     list-style-type: none;
     padding: 0;
@@ -11,4 +12,29 @@ h3 {
   }
   a {
     color: #42b983;
+  }
+
+button{
+    margin: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+     background-color: #009966;
+  }
+ button:hover{
+    background-color: #66ffcc;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .disable {
+    background-color: #e6fff7;
+  }
+
+  .warn{
+      color: red;
+  }
+  
+  input {
+padding:1rem;
   }
