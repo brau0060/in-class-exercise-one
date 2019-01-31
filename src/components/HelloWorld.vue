@@ -1,12 +1,17 @@
 <template>
-    <div id="app">
-  <!-- input (model v-bind)-->
-  <input v-model = "inputText" type="text">
-  <!-- warning message (vue-if) -->
-  <div v-if = "false"> You exseted 50 characters </div>
-  <!-- Submit button (v-bind)-->
-  <button class="test">Submit</button>
+
+<div class="hello">
+  <div class="input-wrapper">
+    <!-- input (v-model v-bind)-->
+    <input name="inputName" type="text" v-model="inputText" v-bind:class="checkInput">
+    <!-- warning message (vue-if v-bind) -->
+    <div v-if="checkValue"  v-bind:class="checkCharacter"> You exseted 50 characters </div>
   </div>
+  <div class="button-warpper">
+    <!-- Submit button (v-bind)-->
+   <button  v-bind:disabled="isdisables"> Submit</button>
+  </div>
+</div>
 </template>
 
 <script src="./HelloWorld.js"></script>

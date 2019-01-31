@@ -20,21 +20,33 @@ button{
     border-radius: 5px;
     border: none;
      background-color: #009966;
+     color: #fff;
   }
  button:hover{
     background-color: #66ffcc;
     transition: 0.5s;
     cursor: pointer;
+    color: #319e76;
   }
 
-  .disable {
+  button:disabled {
     background-color: #e6fff7;
+    cursor: no-drop;
+    transition: 0.5s;
+    color: #319e76;
   }
 
+  input {
+    padding:1rem;
+  }
+
+/* Warn message */
   .warn{
       color: red;
+      transition: 0.5s;
   }
-  
-  input {
-padding:1rem;
+  /* input warn style */
+  .input-warn{
+    border: 2px solid red;
+    transition: 0.5s;
   }
